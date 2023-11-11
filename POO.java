@@ -14,7 +14,7 @@ class Rectangulo {
             this.alto = alto;
         }
         
-        protected int calcularPerimetro(int ancho, int alto) {
+        protected int calcularPerimetro() {
             int perimetro = 2*(ancho + alto);
             return perimetro;
         }
@@ -49,7 +49,7 @@ class POO {
 
         rectangulo = new Rectangulo(ancho_recibido, alto_recibido);
 
-        System.out.println("El perimetro del rectángulo es: " + rectangulo.calcularPerimetro(ancho_recibido, alto_recibido) + "cm");
+        System.out.println("El perimetro del rectángulo es: " + rectangulo.calcularPerimetro() + "cm");
 
         escaner.close();
 
