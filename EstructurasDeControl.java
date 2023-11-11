@@ -12,16 +12,15 @@ public class EstructurasDeControl {
         int[] predecesor = {0,1};
         int resultado = 0;
 
-        System.out.println(predecesor[0] + "\n" + predecesor[1]);
-
         for(int i=2; i<numero; i++) {
 
             resultado = predecesor[0] + predecesor[1];
             predecesor[0] = predecesor[1];
             predecesor[1] = resultado;
             
-            System.out.println(resultado);
         }
+
+        System.out.println("El número en la " + numero + "º posición es: " + resultado);
 
     }
 
