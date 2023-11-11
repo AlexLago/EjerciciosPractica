@@ -23,12 +23,18 @@ public class Fundamentos {
         int numero_recibido;
 
         System.out.println("Introduzca un número");
-
+        
         escaner = new Scanner(System.in);
 
-        numero_recibido = escaner.nextInt();
+        try {
 
-        determinarPar(numero_recibido);
+            numero_recibido = escaner.nextInt();
+
+            determinarPar(numero_recibido);
+
+        } catch (Exception e) {
+            System.out.println("No has introducido un número correctamente.");
+        }
 
         escaner.close();
 
