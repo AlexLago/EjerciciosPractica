@@ -17,7 +17,6 @@ public class Colecciones {
         civil[3] = new Persona("Isaac", 24, "Portugal");
         civil[4] = new Persona("Victor", 37, "Valencia");
         
-        
         Persona.filtroEdad(civil);
     }
 }
